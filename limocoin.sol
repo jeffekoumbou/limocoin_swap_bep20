@@ -336,7 +336,7 @@ contract Ownable is Context {
   }
 }
 
-contract LIMOCOIN is Context, IBEP20, Ownable {
+contract BRICS is Context, IBEP20, Ownable {
   using SafeMath for uint256;
 
   mapping (address => uint256) private _balances;
@@ -349,10 +349,10 @@ contract LIMOCOIN is Context, IBEP20, Ownable {
   string public _name;
 
   constructor() public {
-    _name = "LIMOCOIN SWAP";
-    _symbol = "LMCSWAP";
+    _name = "BRICS TOKEN";
+    _symbol = "BRICS";
     _decimals = 18;
-    _totalSupply = 1650000000000000000000000000;
+    _totalSupply = 1000000000000000000000000000;
     _balances[msg.sender] = _totalSupply;
 
     emit Transfer(address(0), msg.sender, _totalSupply);
